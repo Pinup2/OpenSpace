@@ -1,0 +1,95 @@
+.space{
+    background: url("img.png");
+    position: relative;
+}
+.rocket{
+    position: relative;
+    translate: -400px -700px;
+    top: 135px;
+    rotate: 25deg;
+    width: 300px;
+    z-index: 2;
+}
+.planet{
+    position: relative;
+   z-index: 1;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.control-panel{
+    position: absolute;
+    bottom: 0;
+    width: 250px; /* Adjust width as needed */
+    max-height: 1000px;
+    padding: 10px;
+    translate: 900px -400px;
+    background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+    linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+    linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+    background-size: 25px 25px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+.control-panel__inner{
+    position: relative;
+    background: dimgray;
+    padding: 100px 20px;
+    z-index: 4;
+    color: white;
+
+}
+#control-input{
+    border: 1px solid yellow;
+    text-decoration-color: white;
+    background-color: dimgray;
+    border-radius: 20px;
+    color: white;
+
+}
+#ok{
+    background: yellow;
+    border-radius: 10px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    translate: 0 -60px;
+}
+input[type="range"]{
+    width: 200px;
+}
+#launch{
+background-color: red;
+    border-radius: 60%;
+    padding: 20px 40px;
+    translate: 30px 60px;
+    text-decoration-color: white;
+
+    border: 2px solid white;
+}
+.levers{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+
+    gap: 10px;
+
+}
+.levers input[type='range'] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%; /* Full-width sliders */
+    background: transparent; /* Removes default track background */
+    transform: rotate(90deg); /* Rotate each lever to be horizontal */
+    /* Add other styles for thumb, track, etc. */
+}
+.check-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align to the start of the flex container */
+    gap: 10px;
+}

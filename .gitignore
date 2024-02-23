@@ -1,0 +1,16 @@
+# course config files
+*.yaml
+
+# gradle
+.gradle/
+build
+
+
+# idea config
+.idea
+
+# old stages
+/Open Space/*
+!/Open Space/task/
+/Open Space/task/*
+!/Open Space/task/src
